@@ -20,3 +20,25 @@ source="brute-force-sample.csv" host="kali" index="bruteforce" sourcetype="csv"
 | eval failure_count=last_count+1
 | fields - last_action, count, last_count
 | convert ctime(_time) timeformat="%d/%m/%Y %T"
+
+Installation
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/username/brute-force-detection.git
+Navigate to the project directory:
+bash
+Copy code
+cd brute-force-detection
+Usage
+Replace the sample CSV with your own login data to analyze.
+Adjust the query as needed to fit your data structure.
+Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+License
+This project is licensed under the MIT License.
+
+vbnet
+Copy code
+
